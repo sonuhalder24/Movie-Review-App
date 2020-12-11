@@ -1,2 +1,2 @@
 # Movie-Review-App
-This is a movie review app using RSS Feed.
+This is a movie review app using http networking,JSON parsing,Asynctask.
