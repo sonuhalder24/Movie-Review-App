@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                             new String[]{"link", "title", "pubDate"},
                             new int[]{R.id.link, R.id.title, R.id.pubdate});
                     listView.setAdapter(adapter);
+                    listView.setEmptyView(emptyText);
                 }
             });
             return null;
