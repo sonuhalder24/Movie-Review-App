@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
     ArrayList<HashMap<String,String>> rssItemList=new ArrayList<>();
     ListView listView;
+    TextView emptyText;
 
     RSSParser rssParser=new RSSParser();
     Toolbar toolbar;
