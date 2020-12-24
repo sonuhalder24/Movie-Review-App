@@ -109,8 +109,13 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
             progressBar.setVisibility(View.GONE);
+            if( isNetworkAvailable(MainActivity.this)) {
+                emptyText.setText("No Movie Review");
+            }
+            else{
+                emptyText.setText("No Internet Connection");
+            }
         }
     }
 }
