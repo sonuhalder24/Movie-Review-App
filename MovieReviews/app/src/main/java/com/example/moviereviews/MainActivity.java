@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         new LoadItems().execute("http://www.rediff.com/rss/moviesreviewsrss.xml");
         listView=findViewById(R.id.listView);
+        emptyText=findViewById(R.id.empty_view);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
